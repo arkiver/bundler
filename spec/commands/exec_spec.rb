@@ -305,5 +305,9 @@ describe "bundle exec" do
         expect(out).to eq("1.0")
       end
     end
+
+    describe "BUNDLE_INSTALL=1 bundle exec foo" do
+      pending 'should check and install foo if not found'
+    end
   end
 end
